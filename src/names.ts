@@ -1,0 +1,17 @@
+export const names: Set<string> = new Set([
+    "anglo",
+    "bible",
+    "carol",
+    "costa",
+    "dutch",
+    "harry",
+    "tomas",
+    "jones",
+    "lewis",
+    "maria",
+    "paris",
+    "pedro",
+    "roger",
+    "sally",
+    "lukas",
+  ]);

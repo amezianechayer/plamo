@@ -1,20 +1,17 @@
-* {
+*{
   box-sizing: border-box;
 }
-
 body {
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #2f6759;
 }
-
-div.Row {
+.Row {
   display: flex;
   justify-content: center;
 }
-
-div.Row-letter {
+.Row-letter {
   margin: 2px;
-  border: 2px solid rgba(0,0,0,0.4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   width: 40px;
   height: 40px;
   font-size: 28px;
@@ -25,20 +22,66 @@ div.Row-letter {
   font-weight: bold;
 }
 
-div.Row-letter-green {
-  border: none;
-  background-color: rgb(87, 172, 87);
-  color: white;
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-div.Row-letter-yellow {
+.Game {
+  display: flex;
+  flex-direction: column;
+}
+
+.Game-keyboard {
+  display: flex;
+  flex-direction: column;
+}
+.Game-keyboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.Game-keyboard-button {
+  margin: 2px;
+  background-color: #cdcdcd;
+  padding: 2px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  min-height: 40px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: inherit;
+  border: inherit;
+  cursor: pointer;
+}
+
+.Game-keyboard-button-wide {
+  flex: 2;
+}
+
+.Game-keyboard-button:focus {
+  outline: none;
+}
+.letter-correct {
+  border: none;
+  background-color: rgb(173, 4, 4);
+  color: white;
+}
+.letter-elsewhere {
   border: none;
   background-color: #e9c601;
   color: white;
 }
-
-div.Row-letter-gray {
+.letter-absent {
   border: none;
-  background-color: rgb(162, 162, 162);
+  background-color: rgb(49, 133, 207);
   color: white;
 }
